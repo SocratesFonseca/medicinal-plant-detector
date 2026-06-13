@@ -1,0 +1,21 @@
+#root {
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+p {
+  color: #4b6354;
+  font-size: 1.125rem;
+}

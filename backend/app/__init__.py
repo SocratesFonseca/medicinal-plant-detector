@@ -1,0 +1,1 @@
+"""Medicinal Plant Detector backend."""

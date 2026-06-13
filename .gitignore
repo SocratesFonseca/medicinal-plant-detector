@@ -1,0 +1,53 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python virtual environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JavaScript dependencies and caches
+node_modules/
+.npm/
+.yarn/
+
+# Datasets and model artifacts
+data/
+datasets/
+models/
+weights/
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.onnx
+*.pt
+*.pth
+*.ckpt
+
+# Training runs
+runs/
+wandb/
+mlruns/
+checkpoints/
+
+# Build artifacts
+dist/
+build/
+coverage/
+*.egg-info/
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
