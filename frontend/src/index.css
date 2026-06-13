@@ -1,6 +1,8 @@
 :root {
   color: #17351f;
-  background: #f4f8f2;
+  background:
+    radial-gradient(circle at top left, #e1f0df 0, transparent 35%),
+    #f4f8f2;
   font-family: Inter, system-ui, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

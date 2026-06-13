@@ -1,11 +1,20 @@
 from io import BytesIO
+import os
 
 import cv2
 import numpy as np
 from fastapi import FastAPI, File, HTTPException, UploadFile, status
+from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image, ImageOps, UnidentifiedImageError
 
 app = FastAPI(title="Medicinal Plant Detector API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")],
+    allow_credentials=True,
+    allow_methods=["POST"],
+    allow_headers=["*"],
+)
 
 MAX_FILE_SIZE = 5 * 1024 * 1024
 SUPPORTED_IMAGE_TYPES = {"image/jpeg", "image/png", "image/webp"}
