@@ -1,4 +1,8 @@
 fastapi
 httpx
+numpy
+opencv-python-headless
+pillow
 pytest
+python-multipart
 uvicorn[standard]
