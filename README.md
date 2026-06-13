@@ -30,7 +30,12 @@ Model evaluation results are not available yet.
 
 ## Deployment
 
-The application is not deployed yet.
+The backend is containerized for Docker-based AWS Elastic Beanstalk deployment.
+
+Build from the `backend` directory with `docker build -t medicinal-plant-detector-api .`.
+Create a Docker Elastic Beanstalk environment, deploy the backend source bundle, and
+set `FRONTEND_ORIGIN` in the environment properties. The container uses the platform
+`PORT` value and defaults to port `8000`.
 
 ## API
 
